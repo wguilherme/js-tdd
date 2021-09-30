@@ -6,9 +6,12 @@
   "author": "Withney Guilherme <wguilhermecriativo@gmail.com>",
   "license": "MIT",
   "scripts": {
-    "lint": "yarn run eslint src/*.js",
-    "prepush": "yarn run lint",
-    "prepare": "husky install"
+    "lint": "yarn eslint src/*.js"
+  },
+  "husky": {
+    "hooks": {
+      "pre-push": "yarn lint"
+    }
   },
   "devDependencies": {
     "@typescript-eslint/eslint-plugin": "^4.31.1",
