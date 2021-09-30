@@ -5,6 +5,9 @@
   "repository": "https://github.com/wguilherme/js-tdd-practice.git",
   "author": "Withney Guilherme <wguilhermecriativo@gmail.com>",
   "license": "MIT",
+  "scripts": {
+    "lint": "yarn run eslint src/*.js"
+  },
   "devDependencies": {
     "@typescript-eslint/eslint-plugin": "^4.31.1",
     "@typescript-eslint/parser": "^4.31.1",
